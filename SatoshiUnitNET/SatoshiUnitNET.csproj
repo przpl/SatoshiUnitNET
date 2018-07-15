@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>https://github.com/przpl</Authors>
+    <PackageProjectUrl>https://github.com/przpl/SatoshiUnitNET/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/przpl/SatoshiUnitNET/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>SatoshiUnitNET makes bitcoin coins representation easier. Value is represented by satoshis and can be easily converted to finnies, microbitcoins (uBTC), milibitcoins (mBTC), centibitcoins (cBTC), decibitcoins (dBTC) and bitcoins (BTC).</Description>
   </PropertyGroup>
 
 </Project>
