@@ -50,26 +50,14 @@ namespace SatoshiUnitNET
         public static decimal MaxValue => decimal.MaxValue;
 
         public decimal Satoshis {
-            get
-            {
-                return _satoshis;
-            }
-            set
-            {
-                _satoshis = Math.Round(value, 0);
-            }
+            get => _satoshis;
+            set => _satoshis = Math.Round(value, 0);
         }
 
         public decimal Finnies
         {
-            get
-            {
-                return Satoshis / SATOSHIS_PER_FINNEY;
-            }
-            set
-            {
-                Satoshis = value * SATOSHIS_PER_FINNEY;
-            }
+            get => Satoshis / SATOSHIS_PER_FINNEY;
+            set => Satoshis = value * SATOSHIS_PER_FINNEY;
         }
 
         /// <summary>
@@ -77,14 +65,8 @@ namespace SatoshiUnitNET
         /// </summary>
         public decimal Microbitcoins
         {
-            get
-            {
-                return Satoshis / SATOSHIS_PER_MICRO;
-            }
-            set
-            {
-                Satoshis = value * SATOSHIS_PER_MICRO;
-            }
+            get => Satoshis / SATOSHIS_PER_MICRO;
+            set => Satoshis = value * SATOSHIS_PER_MICRO;
         }
 
         /// <summary>
@@ -92,14 +74,8 @@ namespace SatoshiUnitNET
         /// </summary>
         public decimal Milibitcoins
         {
-            get
-            {
-                return Satoshis / SATOSHIS_PER_MILI;
-            }
-            set
-            {
-                Satoshis = value * SATOSHIS_PER_MILI;
-            }
+            get => Satoshis / SATOSHIS_PER_MILI;
+            set => Satoshis = value * SATOSHIS_PER_MILI;
         }
 
         /// <summary>
@@ -107,14 +83,8 @@ namespace SatoshiUnitNET
         /// </summary>
         public decimal Centibitcoins
         {
-            get
-            {
-                return Satoshis / SATOSHIS_PER_CENTI;
-            }
-            set
-            {
-                Satoshis = value * SATOSHIS_PER_CENTI;
-            }
+            get => Satoshis / SATOSHIS_PER_CENTI;
+            set => Satoshis = value * SATOSHIS_PER_CENTI;
         }
 
         /// <summary>
@@ -122,14 +92,8 @@ namespace SatoshiUnitNET
         /// </summary>
         public decimal Decibitcoins
         {
-            get
-            {
-                return Satoshis / SATOSHIS_PER_DECI;
-            }
-            set
-            {
-                Satoshis = value * SATOSHIS_PER_DECI;
-            }
+            get => Satoshis / SATOSHIS_PER_DECI;
+            set => Satoshis = value * SATOSHIS_PER_DECI;
         }
 
         /// <summary>
@@ -137,14 +101,8 @@ namespace SatoshiUnitNET
         /// </summary>
         public decimal Bitcoins
         {
-            get
-            {
-                return Satoshis / SatoshisPerBitcoin;
-            }
-            set
-            {
-                Satoshis = value * SatoshisPerBitcoin;
-            }
+            get => Satoshis / SatoshisPerBitcoin;
+            set => Satoshis = value * SatoshisPerBitcoin;
         }
 
         private const int SATOSHIS_PER_FINNEY = 10;
